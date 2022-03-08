@@ -48,8 +48,4 @@ CREATE TABLE review(
 	primary key(review_id)
 );
 
-SELECT count(*)
-FROM ((SELECT business_id
-	FROM shop_category
-	WHERE category = 'Bubble Tea') as t1 
-	INNER JOIN review as t2 ON t1.business_id=t2.business_id) t;
+COPY review FROM ".\\yelp_academic_dataset_review.csv" CSV HEADER
