@@ -74,7 +74,7 @@ CREATE TABLE user_info(
 	compliment_profile int,
 	compliment_cute int,
 	compliment_list int, 
-	ompliment_note int,
+	compliment_note int,
 	compliment_plain int,
 	compliment_cool int,
 	compliment_funny int,
