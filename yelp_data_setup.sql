@@ -48,4 +48,14 @@ CREATE TABLE review(
 	primary key(review_id)
 );
 
+CREATE TABLE tip(
+	user_id text not null,
+	business_id text not null,
+	text text,
+	date time,
+	compliment_count int,
+	primary key(user_id, business_id, date)
+);
+
 COPY review FROM ".\\yelp_academic_dataset_review.csv" CSV HEADER
+COPY tip FROM 'C:\Users\kev\Desktop\University\stat 170A\Project\Stat170-Project\yelp_academic_dataset_tip.csv' CSV HEADER;
