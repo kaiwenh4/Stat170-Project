@@ -48,4 +48,51 @@ CREATE TABLE review(
 	primary key(review_id)
 );
 
-COPY review from 'D:\University\stat 170A\Project\Stat170-Project\yelp_academic_dataset_review.json';
+CREATE TABLE tip(
+	user_id text not null,
+	business_id text not null,
+	text text,
+	date time,
+	compliment_count int,
+	primary key(user_id, business_id, date)
+);
+
+CREATE TABLE user_info(
+	user_id text not null,
+	name text,
+	review_count int,
+	yelping_since time,
+	useful int,
+	funny int, 
+	cool int, 
+	elite text,
+	friends text,
+	fans int,
+	average_stars float, 
+	compliment_hot int,
+	compliment_more int,
+	compliment_profile int,
+	compliment_cute int,
+	compliment_list int, 
+	ompliment_note int,
+	compliment_plain int,
+	compliment_cool int,
+	compliment_funny int,
+	compliment_writer int, 
+	compliment_photos int,
+	primary key(user_id)
+);
+
+CREATE TABLE checkin(
+	business_id text not null,
+	date text,
+	primary key(business_id)
+);
+
+CREATE TABLE photo(
+	photo_id text not null,
+	business_id text not null,
+	caption text,
+	labal text,
+	primary key(photo_id)
+);
