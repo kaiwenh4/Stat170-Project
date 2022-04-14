@@ -4,5 +4,6 @@ CREATE TABLE google_info(
 	rating float,
 	num_rating int,
 	types text,
+	price_level int,
 	primary key(business_id)
 );
