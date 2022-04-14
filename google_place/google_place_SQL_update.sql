@@ -6,4 +6,3 @@ CREATE TABLE google_info(
 	types text,
 	primary key(business_id)
 );
-
