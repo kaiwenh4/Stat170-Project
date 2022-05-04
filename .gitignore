@@ -6,5 +6,6 @@ yelp_academic_dataset_tip.json
 yelp/review.csv
 yelp/photos.json
 test.sql
+test.ipynb
 yelp/yelp_photos
 yolo/yolo_output_df.csv
