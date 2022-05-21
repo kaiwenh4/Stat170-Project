@@ -1,3 +1,5 @@
+ set search_path to yelp_data;
+ CREATE VIEW shop_static_info AS
  SELECT *
    FROM yelp_data.yelp_coffee_info_processed
      LEFT JOIN yelp_data.yelp_photo_count USING (business_id)
